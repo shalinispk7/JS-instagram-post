@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSTAGRAM</title>
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <section class="insta-sec">
+        <div class="container insta">
+            <!-- header section -->
+            <div class="insta-head">
+                <div class="insta-l">
+                    <img src="image/portfolio-2.jpg" alt="">
+                    <div>
+                        <p>sj.shalini</p>
+                        <p class="pcls">Namakkal</p>
+                    </div>  
+                </div>
+                <div class="insta-r">
+                    <i class="bi bi-three-dots-vertical"></i>
+                </div>
+            </div>
+
+            <!-- insta body -->
+
+            <div class="insta-body">
+                <img src="image/team-2.jpg" alt="">
+                
+            </div>
+
+            <!-- icon section -->
+            <div class="insta-icon">
+                <div class="icon-l">
+                    <i class="bi bi-heart " id="heart" onclick="likeImagefnc()"></i>
+                    <i class="bi bi-chat"></i>
+                    <i class="bi bi-send" class="btn" onclick="openModal()"></i>
+                    <div class="popup" id="popup">
+                        <h4>Share <i class="bi bi-x " onclick="closeModal()" style="float: right;"></i></h4>
+                        <label>To:</label><input tpye="text" placeholder="Search">
+                        <h3>Suggested</h3>
+                        <!-- image1 -->
+                        <div class="insta-head">
+                            <div class="insta-l">
+                                <img src="image/team-1.jpg" alt="">
+                                <div>
+                                    <p>ravindra_01</p>
+                                    <p class="pcls">PremKumar</p>
+                                </div>  
+                            </div>
+                            <div class="insta-r">
+                                <i class="bi bi-circle circleB" onclick="circle()"></i>
+                            </div>
+                        </div>
+                        <!-- image2 -->
+                        <div class="insta-head">
+                            <div class="insta-l">
+                                <img src="image/team-3.jpg" alt="">
+                                <div>
+                                    <p>sj.jeeva</p>
+                                    <p class="pcls">JeevaShanmugam</p>
+                                </div>  
+                            </div>
+                            <div class="insta-r">
+                                <i class="bi bi-circle circleB" onclick="circle()"></i>
+                            </div>
+                        </div>
+                        <button type="button" onclick="closeModal()">SEND</button>
+                    </div>
+                    
+                </div>
+                
+                <!-- <i class="bi bi-three-dots"></i> -->
+
+                <!-- bookmark here -->
+                <div>
+                    <div id="toastDiv" ></div>
+                    <i class="bi bi-bookmark markImg" id="saveimg" onclick="saveImagefnc()"></i>
+                </div>
+            </div>  
+                <!-- like increases -->
+                <div class="insta-foot">
+                    <p><span id="likeImg" style="font-size: 16px;color:black;">100</span> likes</p>
+                    <p>sj.shalini #Sometimes all we need is a break.</p>
+                    <p><span>View all comments</span></p>
+                    <p><span>2 DAYS AGO</span></p>
+                </div>
+            
+
+        </div>
+    </section>
+
+
+<script src="main.js"></script>
+
+    
+</body>
+</html>
